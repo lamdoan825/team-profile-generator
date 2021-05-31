@@ -1,19 +1,32 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lamdoan825/team-profile-generator.git"
+    "url": "git+https://github.com/sylviaprabudy/team-profile-generator.git"
   },
-  "author": "",
+  "keywords": [
+    "team",
+    "profile",
+    "generato",
+    "node.js"
+  ],
+  "author": "Sylvia Prabudy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lamdoan825/team-profile-generator/issues"
+    "url": "https://github.com/sylviaprabudy/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/lamdoan825/team-profile-generator#readme"
+  "homepage": "https://github.com/sylviaprabudy/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3"
+  },
+  "directories": {
+    "lib": "lib"
+  }
 }
