@@ -27,7 +27,7 @@ function initApp() {
       {
         type: "input",
         name: "managerName",
-        message: "What's manager's name?",
+        message: "What is the manager's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -60,9 +60,10 @@ function initApp() {
       {
         type: "input",
         name: "managerOfficeNumber",
-        message: "What's the manager's office number? (format: 111111111)",
+        message: "What's the manager's office phone number? (format: 111111111)",
         validate: answer => {
           const pass = answer.match(
+            /^[1-9]\d/
           );
           if (pass) {
             return true;
@@ -111,7 +112,7 @@ function initApp() {
       {
         type: "input",
         name: "engineerName",
-        message: "What's the engineer's name?",
+        message: "What is the engineer's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -166,7 +167,7 @@ function initApp() {
       {
         type: "input",
         name: "internName",
-        message: "What's the intern's name?",
+        message: "What is the intern's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
