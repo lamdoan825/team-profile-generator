@@ -16,16 +16,14 @@ A Node.js command-line application that takes in information about employees on 
 
 
 ## Usage
-This application will allow user to generate a team profile
-
-Users will be prompt to enter information for a manager
-
-Then user will have choices to select to add a team member (an engineer or an intern) or end the application
-When user selects Engineer, user will be prompted to enter Engineer information
-When user selects Intern, user will be prompted to enter Intern information
-When user selects to end application, HTML page will be generated
-Once HTML page has been created, all the profiles entered will be displayed
-When user clicks on email, github, or phone number user will be prompted with the correct action per application
+- This application will allow user to generate a team profile
+- Users will be prompt to enter information for a manager
+- Then user will have choices to select to add a team member (an engineer or an intern) or end the application
+- When user selects Engineer, user will be prompted to enter Engineer information
+- When user selects Intern, user will be prompted to enter Intern information
+- When user selects to end application, HTML page will be generated
+- Once HTML page has been created, all the profiles entered will be displayed
+- When user clicks on email, github, or phone number user will be prompted with the correct action per application
 
 
 ## Screenshots
