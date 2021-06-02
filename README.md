@@ -1,8 +1,8 @@
 # Team Profile Generator
 
-### Github: 
+### Github: https://github.com/lamdoan825/team-profile-generator
 
-### Walkthrough Video: 
+### Walkthrough Video: https://drive.google.com/file/d/1c_38d9wkVtWvWf4gHYD_gTYidfdcmSfI/view
 
 ## Description
 A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
