@@ -27,9 +27,9 @@ A Node.js command-line application that takes in information about employees on 
 
 
 ## Screenshots
-<img width="1440" alt="ss page" src="https://user-images.githubusercontent.com/80074766/120562632-662e7f00-c3cc-11eb-93ad-d98453b8c4e3.png">
-<img width="1217" alt="ss questions" src="https://user-images.githubusercontent.com/80074766/120562648-6cbcf680-c3cc-11eb-9296-1056bf0f5fa9.png">
 <img width="1217" alt="ss test" src="https://user-images.githubusercontent.com/80074766/120562656-70e91400-c3cc-11eb-9df8-6bdf4493d85d.png">
+<img width="1217" alt="ss questions" src="https://user-images.githubusercontent.com/80074766/120562648-6cbcf680-c3cc-11eb-9296-1056bf0f5fa9.png">
+<img width="1440" alt="ss page" src="https://user-images.githubusercontent.com/80074766/120562632-662e7f00-c3cc-11eb-93ad-d98453b8c4e3.png">
 
 
 ## Technologies Used
