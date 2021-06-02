@@ -8,11 +8,12 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
-const dist_dir = path.resolve(__dirname, 'output');
+const dist_dir = path.resolve(__dirname, 'dist');
 const outputPath = path.join(dist_dir, 'index.html');
 
 const render = require('./src/page-template');
 
+// Empty place holder arrays
 const teamArr = [];
 const idArr = [];
 
@@ -157,6 +158,72 @@ function initApp() {
       idArr.push(answers.engineerId);
       addTeam();
     });
+  }
+
+  // Add an Intern when selected
+  function addIntern() {
+    inquirer.prompt([
+      {
+        type: "input",
+        name: "internName",
+        message: "What's the intern's name?",
+        validate: answer => {
+          if (answer !== "") {
+            return true;
+          }
+          return "Please enter at least one character.";
+        }
+      },
+      {
+        type: "input",
+        name: "internId",
+        message: "What's the intern's id?",
+        validate: answer => {
+          if (answer !== "") {
+            return true;
+          }
+          return "Please enter a valid Intern's ID.";
+        }
+      },
+      {
+        type: "input",
+        name: "internEmail",
+        message: "What's the intern's email?",
+        validate: answer => {
+          if (answer !== "") {
+            return true;
+          }
+          return "Email address can't be empty.";
+        }
+      },
+      {
+        type: "input",
+        name: "internSchool",
+        message: "What's the intern's school?",
+        validate: answer => {
+          if (answer !== "") {
+            return true;
+          }
+          return "Please enter a correct school.";
+        }
+      }
+
+    ]).then(answers => {
+      const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+      teamArr.push(intern);
+      idArr.push(answers.internId);
+      addTeam();
+    });
+  }
+
+  function generateHTML() {
+
+    // Create dist directory for index.html if it doesnt exist
+    if (!fs.existsSync(dist_dir)) {
+      fs.mkdirSync(dist_dir)
+    }
+    console.log("Generating Team Profile.... ");
+    fs.writeFileSync(outputPath, render(teamArr), "utf-8");
   }
   addManager();
 

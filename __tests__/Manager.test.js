@@ -2,7 +2,7 @@ const Employee = require('../lib/Employee');
 const Manager = require('../lib/Manager');
 
 test('creates a manager object', () => {
-  const manager = new Manager('Linda');
+  const manager = new Manager('Tammer');
 });
 
 test('set office number with constructor', () => {
